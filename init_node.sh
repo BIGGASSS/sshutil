@@ -1,6 +1,8 @@
 #!/bin/bash
 
 echo "export TERM="xterm-256color"" >> ~/.bashrc
+source ~/.bashrc
+
 apt update && apt install curl wget sudo systemd-timesyncd -y
 
 # Enable BBR
