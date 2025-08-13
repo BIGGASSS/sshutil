@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "export TERM="xterm-256color"" >> ~/.bashrc
-apt update && apt install curl wget sudo
+apt update && apt install curl wget sudo systemd-timesyncd -y
 
 # Enable BBR
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
